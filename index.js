@@ -69,3 +69,33 @@ $("input").keypress(function(event) {
 $("h1").on("mouseover", function() { // on mouseOver change h1 color
     $("h1").css("color", "salmon")
 })
+
+
+
+// ********* Adding & Removing Elements with jQuery ***********
+
+$("h1").before("<button>New</button>"); // add a button before the h1 // can use .after // prepend // append (these two add to front and back, not top or bottom)
+
+
+// ********* Adding animations ***********
+
+// $("button").on("click", function() {
+//     $("h1").fadeOut();
+//     $("h1").fadeIn();
+// })
+
+// $("button").on("click", function() {
+//     $("h1").slideToggle();
+// });
+
+// $("button").on("click", function() { // slide up / down
+//     $("h1").slideToggle();
+// });
+
+// $("button").on("click", function() { // animates apacity
+//     $("h1").animate({opacity: 0.5});
+// });
+
+$("button").on("click", function() { // chained methods
+    $("h1").slideUp().slideDown().animate({opacity: 0.5});
+});

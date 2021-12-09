@@ -27,3 +27,4 @@ $("button").text("Don't Click Me") // Changes all the buttons text to 'Don't cli
 
 $("button").html("<em>Hey</em>") // changes the buttons html
 
+$("a").attr("href", "https://yahoo.com") // changes the anchor ('a') tags attribute from the original href, to the new one (yahoo)
